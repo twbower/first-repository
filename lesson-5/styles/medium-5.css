@@ -1,0 +1,53 @@
+@media only screen and (min-width: 37.5em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+body {max-width: 90%}    
+nav {display:inline}  
+    
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 1%;
+    overflow: hidden;
+}
+    
+nav ul li {
+    display: inline;
+    width:auto;
+    margin: 2% 0;
+    padding: .5em
+}
+    
+nav ul li a {}
+nav ul li.active a {
+    color: darkgreen;
+    letter-spacing: .5em;
+    font-weight: bold;
+}
+nav ul li a:hover {
+    color: #CE7628;
+    text-transform: uppercase;
+    padding: 0 .5em        
+}
+  nav button {
+      display:none; 
+    }  /* hamburger button does not need to be shown */
+
+ 
+    .today {
+        width: 25%;
+        display: inline;
+        float: right;
+        margin: .5em 3em;
+}    
+  section.forecast { 
+      display: block;
+      width: 45%;
+      
+    }  /* show the 10-day forecast with the medium view and up */
+  
+  article p.town-article img { 
+      width: 62.666%; 
+      float:right; 
+    }  /* responsive images */
+
+}

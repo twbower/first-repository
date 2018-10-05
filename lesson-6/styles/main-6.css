@@ -1,0 +1,133 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { 
+    box-sizing: border-box;
+    margin: 0 auto;
+    
+}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+    font-size: 16px;
+    font-family: 'Lora', serif;
+    text-align: center;
+    color: #2B4B75;
+    background-color: white;
+    max-width: 600px;
+}
+
+header, nav, main, footer {
+    min-width: 300px;
+}
+ 
+header {
+    padding: .5rem 2%;
+    display: flex;
+    width: auto;
+}
+header h1 {
+    flex-direction:row;
+    margin-right:0%;
+    display: inline;
+    text-align: center;
+    width: 50%;
+    font-size: 3em;
+    color: #196ecf;
+}
+header img {
+    width:25%;
+    height: auto;
+    padding: 5px;
+}
+header .subheading {
+    margin-top: 70px;
+    margin-left: -15%;
+    font-size: 1.5em;
+    padding-top: 15px;
+    color: #ff5f0e;
+    }
+
+.hamburger {
+    max-width: 100%;
+    font-size: 1.5em;
+    background-color: #196ECF;
+    color: white;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation.responsive li {
+    display: block
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 1%;
+    overflow: hidden;
+    background-color: #196ECF;
+    color: white;
+    }
+    
+nav ul li {
+    display: inline;
+    height: 25px;
+    width:auto;
+    margin: 2% 0;
+    padding: .5em
+}
+    
+nav ul li a {
+    color: white;
+}
+nav ul li.active a {}
+  
+nav ul li a:hover {
+    color: #CE7628;
+    text-transform: uppercase;
+    padding: 0 .5em
+        
+}
+main {}
+main h2 {
+    text-align: center;
+    font-size: 1.75em;
+    padding: .5em; 
+}
+main figure { margin: 0 0 .2rem 2%; width:96%; }
+main figure img { width: 100%; }
+
+section.forecast {
+    display: none;
+}
+article {
+    width: 45%;
+    max-height: 20%;
+    margin-bottom: 2em;
+}
+
+article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+  width: 35%;  
+  margin: 1em;
+  float: left;
+}
+
+footer {
+    font-size: 1.5em;
+          
+}
+footer aside {
+    width: 90%;
+    padding: 5%;
+}
+footer>p {
+    color: #196ecf;
+    } /* This structure refers to p elements that are direct children of the footer element */
+
+/* Other Class Selectors */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display:table;
+}
